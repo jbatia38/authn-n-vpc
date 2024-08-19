@@ -18,11 +18,11 @@ terraform {
 }
 
 
-# resource "aws_vpc" "dcn" {
-#   cidr_block       = "10.0.0.0/16"
-#   instance_tenancy = "default"
+resource "aws_vpc" "dcn" {
+  cidr_block       = "10.0.0.0/16"
+  instance_tenancy = "default"
 
-#   tags = {
-#     Name = "dcn"
-#   }
-# }
+  tags = {
+    Name = "dcn"
+  }
+}
